@@ -1,0 +1,32 @@
+{
+  "name": "pledge-agent",
+  "version": "1.0.0",
+  "description": "Automatic pledging of unused balances",
+  "keywords": [
+    "bhd",
+    "lhd",
+    "boom",
+    "disc'",
+    "pledge",
+    "poc"
+  ],
+  "repository": "https://github.com/felixbrucker/pledge-agent.git",
+  "bugs": "https://github.com/felixbrucker/pledge-agent/issues",
+  "license": "GPL-3.0",
+  "bin": {
+    "pledge-agent": "./main.js"
+  },
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "js-yaml": "^3.13.1",
+    "json-bigint": "^0.3.0",
+    "moment": "^2.24.0",
+    "superagent": "^5.1.0"
+  },
+  "engines": {
+    "node": "^10.0.0"
+  }
+}

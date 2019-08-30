@@ -1,0 +1,25 @@
+on:
+  push:
+    branches:
+      - 'tags/*'
+name: Audit and Publish
+jobs:
+  auditAndPublish:
+    name: Audit and Publish
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Install dependencies
+      uses: actions/npm@master
+      with:
+        args: ci
+    - name: Audit dependencies
+      uses: actions/npm@master
+      with:
+        args: audit
+    - name: Publish to npm
+      uses: actions/npm@master
+      env:
+        NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+      with:
+        args: publish --access public
