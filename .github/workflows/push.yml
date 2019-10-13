@@ -6,19 +6,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Install dependencies and audit and publish
+      - name: Install dependencies and audit
         uses: actions/setup-node@v1
         with:
           node-version: '10.x'
           registry-url: 'https://registry.npmjs.org'
       - run: npm ci
       - run: npm audit
-      - run: |
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
-          npm publish --access public
+      - name: Publish to npm
         if: startsWith(github.ref, 'refs/tags/')
+        uses: felixbrucker/npm@master
         env:
           NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+        with:
+          args: publish --access public
       - name: Create Github Release
         if: startsWith(github.ref, 'refs/tags/')
         uses: felixbrucker/github-actions/publish-release@master
