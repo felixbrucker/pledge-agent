@@ -1,12 +1,13 @@
 {
   "name": "pledge-agent",
-  "version": "1.1.0",
-  "description": "Automatic pledging of unused balances",
+  "version": "1.2.0",
+  "description": "Automatic pledging and sending of unused balances",
   "keywords": [
     "bhd",
     "lhd",
     "boom",
-    "disc'",
+    "disc",
+    "hdd",
     "pledge",
     "poc"
   ],
