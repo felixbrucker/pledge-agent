@@ -1,3 +1,8 @@
+1.4.0 / 2019-11-02
+==================
+
+* Add support for locking periods for XHD pledges.
+
 1.3.0 / 2019-10-23
 ==================
 
