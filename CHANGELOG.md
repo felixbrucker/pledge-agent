@@ -1,3 +1,9 @@
+1.5.0 / 2019-11-07
+==================
+
+* Add support for BURST (sending only).
+* Add support for sending public messages with BURST/BOOM payments.
+
 1.4.0 / 2019-11-02
 ==================
 
