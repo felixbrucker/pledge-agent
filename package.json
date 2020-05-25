@@ -24,7 +24,7 @@
   "dependencies": {
     "js-yaml": "^3.13.1",
     "json-bigint": "^0.3.0",
-    "moment": "^2.25.3",
+    "moment": "^2.26.0",
     "superagent": "^5.2.2"
   },
   "engines": {
