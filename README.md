@@ -10,6 +10,10 @@ Pledge-Agent
 - nodejs >= 10
 - wallets for all coins you want to pledge from
 
+## Getting started
+
+If you are unsure on how to proceed check the [Docs](https://docs.foxypool.io/pledge-agent/).
+
 ## Setup
 
 ```bash
