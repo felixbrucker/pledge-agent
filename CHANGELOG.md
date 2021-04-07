@@ -1,3 +1,13 @@
+1.6.0 / 2021-04-07
+==================
+
+* Add support for BURST commitment.
+* Allow removing all pledges with `maxPledge` of zero.
+* Add support for the `multiplesOf` config option to send or pledge only multiples of a defined amount.
+* Add support for the `coinsToKeepInWallet` config option to keep a defined amount of coins in the wallet and not send or pledge it.
+* Fix waiting one round when not actually removing pledges with `maxPledge` configured.
+* Remove support for BOOM.
+
 1.5.0 / 2019-11-07
 ==================
 
